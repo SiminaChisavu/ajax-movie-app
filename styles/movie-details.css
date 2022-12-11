@@ -1,0 +1,11 @@
+.display {
+  margin-bottom: 0.5rem;
+}
+
+.fa-solid,
+.editBtn {
+  position: relative;
+  top: -60rem;
+  right: -55rem;
+  height: 2rem;
+}

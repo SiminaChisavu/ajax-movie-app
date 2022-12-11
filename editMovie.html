@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit movie</title>
+    <link rel="stylesheet" href="styles/editMovie.css" />
+    <script src="scripts/edit-movie.js" defer></script>
+  </head>
+  <body>
+    <form data-validation-form>
+      <fieldset>
+        <section class="main">
+          <div class="form-input-title">
+            <label for="mTitle">Title:</label>
+            <input type="text" name="required" id="mTitle" />
+          </div>
+          <div class="form-input-image">
+            <label for="mImage">Image:</label>
+            <input type="text" name="required" id="mImage" />
+          </div>
+          <div class="form-input-rating">
+            <label for="rating">IMDB Rating:</label>
+            <input type="range" name="required" id="rating" min="0" max="10" />     
+          </div>
+          <div class="form-input-genre">
+            <label for="genre">Genre:</label>
+              <select id="genre" name="required">
+                <option hidden value="">Please select an option</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="SF">Sci-Fi</option>
+                <option value="Thriller">Thriller</option>
+              </select>
+          </div>
+          <div class="form-input-dir">
+            <label for="mDirector">Director:</label>
+            <input type="text" name="required" id="mDirector" />
+          </div>
+          <div class="form-input-plot">
+            <label for="mPlot">Plot:</label>
+            <textarea name="required" id="mPlot" cols="30" rows="10"></textarea>
+          </div>
+          <footer>
+            <button type="submit">Edit movie</button>
+          </footer> 
+        </section>     
+        </div>
+      </fieldset>
+      
+  </form>
+  </body>
+</html>

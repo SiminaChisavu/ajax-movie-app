@@ -1,0 +1,38 @@
+form {
+  margin: 0 auto;
+  width: 50rem;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+.form-input-genre label,
+.form-input-image label {
+  margin-right: 2.9rem;
+}
+
+.form-input-title label,
+.form-input-plot label {
+  margin-right: 3.5rem;
+}
+
+.form-input-plot label {
+  position: relative;
+  top: -9rem;
+}
+
+.form-input-dir label {
+  margin-right: 2rem;
+}
+textarea {
+  margin-left: 0.2rem;
+}
+
+input,
+textarea {
+  width: 15rem;
+}
+input {
+  height: 1.2rem;
+}

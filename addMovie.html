@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a new movie</title>
+    <link rel="stylesheet" href="styles/addMovie.css" />
+    <script src="scripts/add-movies.js" defer></script>
+  </head>
+  <body>
+    <form data-validation-form>
+      <fieldset>
+        <section class="main">
+          <div class="form-input-title">
+            <label for="mTitle">Title:</label>
+            <input type="text" name="required" id="mTitle" />
+          </div>
+          <span class="error">All fields are required</span>
+          <div class="form-input-image">
+            <label for="mImage">Image:</label>
+            <input type="text" name="required" id="mImage" />
+          </div>
+          <span class="error">All fields are required</span>
+          <div class="form-input-rating">
+            <label for="rating">IMDB Rating:</label>
+            <input type="range" name="required" id="rating" min="0" max="10" />     
+          </div>
+          <span class="error">All fields are required</span>
+          <div class="form-input-genre">
+            <label for="genre">Genre:</label>
+              <select id="genre" name="required">
+                <option hidden value="">Please select an option</option>
+                <option value="action">Action</option>
+                <option value="drama">Drama</option>
+                <option value="sf">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+              </select>
+          </div>
+          <span class="error">All fields are required</span>
+          <div class="form-input-dir">
+            <label for="mDirector">Director:</label>
+            <input type="text" name="required" id="mDirector" />
+          </div>
+          <span class="error">All fields are required</span>
+          <div class="form-input-plot">
+            <label for="mPlot">Plot:</label>
+            <textarea name="required" id="mPlot" cols="30" rows="10"></textarea>
+          </div>
+          <span class="error">All fields are required</span>
+          <footer>
+            <button type="submit">Add movie</button>
+          </footer> 
+        </section>     
+        </div>
+      </fieldset>
+      
+  </form>
+  </body>
+</html>
